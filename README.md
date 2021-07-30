@@ -1,16 +1,16 @@
 # Publisher and Subscriber (C++) Ros Kinetic
 #### Making a workspace
-$ mkdir -p ~/catkin_ws/src
-$ cd ~/catkin_ws/
+$ mkdir -p ~/catkin_ws/src  
+$ cd ~/catkin_ws/  
 $ catkin_make
 #### catkin_make, Creates CmakeLists.txt file inside src folder
-now we go to $ cd ~/catkin_ws/src and create the beginner_tutorials package
+now we go to $ cd ~/catkin_ws/src and create the beginner_tutorials package  
 $ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 
 It creates the beginner_tutorials folder and it has a package.xml and a CmakeLists.tx in it, now open the package.xml file, if the package format is “2” then <package format="2"> and if there is a <run_depend> tag, cut <exec_depend> we need to change it because <run_depend> belongs to old version.
 
 #### Now to write a publisher talker node:
-$ roscd beginner_tutorials
+$ roscd beginner_tutorials  
 $ mkdir -p src
 
 We create the src/talker.cpp file in the beginner_tutorials directory and put the publisher's c++ codes in it.
@@ -18,8 +18,8 @@ We follow the same steps for the subscriber.
 
 #### Create msg:
 
-$ roscd beginner_tutorials  
-$ mkdir msg  
+$ roscd beginner_tutorials    
+$ mkdir msg    
 $ echo "int64 num" > msg/Num.msg
 
 #### Create srv:
