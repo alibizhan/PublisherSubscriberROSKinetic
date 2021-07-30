@@ -38,7 +38,7 @@ message_generation
 genmsg
 )
 
-#### In your catkin workspace
+#### In your catkin workspace run the following commands
 $ roscd beginner_tutorials
 $ cd ../..
 $ catkin_make install
@@ -47,3 +47,21 @@ $ cd -
 ![](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/1.png?raw=true)
 
 
+#### Publisher:
+
+$ roscore
+###### In your catkin workspace
+$ cd ~/catkin_ws
+$ source ./devel/setup.bash
+$ rosrun beginner_tutorials talker
+
+![Publisher](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/2.png?raw=true)
+
+#### Subscriber:
+
+$ roscore
+###### In your catkin workspace
+$ cd ~/catkin_ws
+$ source ./devel/setup.bash
+$ rosrun beginner_tutorials listener
+![Subscriber](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/3.png?raw=true)
