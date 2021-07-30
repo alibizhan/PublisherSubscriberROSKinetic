@@ -19,29 +19,29 @@ We follow the same steps for the subscriber.
 #### Create msg:
 
 $ roscd beginner_tutorials
-$ mkdir msg
+$ mkdir msg__
 $ echo "int64 num" > msg/Num.msg
 
 #### Create srv:
-$ roscd beginner_tutorials
-$ mkdir srv
+$ roscd beginner_tutorials__
+$ mkdir srv__
 $ roscp rospy_tutorials AddTwoInts.srv srv/AddTwoInts.srv
 
 #### Then we add the following lines in package.xml and CmakeLists.txt file.
 generate_messages(DEPENDENCIES std_msgs)
 
-findg_package(catkin REQUIRED COMPONENTS
-roscpp
-rospy
-std_msgs
-message_generation
+findg_package(catkin REQUIRED COMPONENTS__
+roscpp__
+rospy__
+std_msgs__
+message_generation__
 genmsg
 )
 
 #### In your catkin workspace run the following commands
-$ roscd beginner_tutorials
-$ cd ../..
-$ catkin_make install
+$ roscd beginner_tutorials__
+$ cd ../..__
+$ catkin_make install__
 $ cd -
 
 ![](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/1.png?raw=true)
@@ -49,10 +49,10 @@ $ cd -
 
 #### Publisher:
 
-$ roscore
-###### In your catkin workspace
-$ cd ~/catkin_ws
-$ source ./devel/setup.bash
+$ roscore__
+###### In your catkin workspace__
+$ cd ~/catkin_ws__
+$ source ./devel/setup.bash__
 $ rosrun beginner_tutorials talker
 
 ![Publisher](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/2.png?raw=true)
@@ -61,7 +61,7 @@ $ rosrun beginner_tutorials talker
 
 $ roscore
 ###### In your catkin workspace
-$ cd ~/catkin_ws
-$ source ./devel/setup.bash
-$ rosrun beginner_tutorials listener
-![Subscriber](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/3.png?raw=true)
+$ cd ~/catkin_ws__
+$ source ./devel/setup.bash__
+$ rosrun beginner_tutorials listener__
+![Subscriber](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/3.png?raw=true)__
