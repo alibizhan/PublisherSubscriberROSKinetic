@@ -27,7 +27,23 @@ $ roscd beginner_tutorials
 $ mkdir srv
 $ roscp rospy_tutorials AddTwoInts.srv srv/AddTwoInts.srv
 
-Then we add the following lines in package.xml and CmakeLists.txt file.
+#### Then we add the following lines in package.xml and CmakeLists.txt file.
+generate_messages(DEPENDENCIES std_msgs)
 
+findg_package(catkin REQUIRED COMPONENTS
+roscpp
+rospy
+std_msgs
+message_generation
+genmsg
+)
+
+#### In your catkin workspace
+$ roscd beginner_tutorials
+$ cd ../..
+$ catkin_make install
+$ cd -
+
+![](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/1.png?raw=true)
 
 
