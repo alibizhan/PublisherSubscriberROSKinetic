@@ -44,7 +44,7 @@ $ cd ../..
 $ catkin_make install  
 $ cd -
 
-![](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/1.png?raw=true)
+![](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/outputs/1.png?raw=true)
 
 
 #### Publisher:
@@ -55,7 +55,7 @@ $ cd ~/catkin_ws
 $ source ./devel/setup.bash  
 $ rosrun beginner_tutorials talker
 
-![Publisher](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/2.png?raw=true)
+![Publisher](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/outputs/2.png?raw=true)
 
 #### Subscriber:
 
@@ -64,4 +64,4 @@ $ roscore
 $ cd ~/catkin_ws  
 $ source ./devel/setup.bash  
 $ rosrun beginner_tutorials listener  
-![Subscriber](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/3.png?raw=true)
+![Subscriber](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/outputs/3.png?raw=true)
