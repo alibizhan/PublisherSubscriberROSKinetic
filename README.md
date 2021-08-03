@@ -7,7 +7,8 @@ $ catkin_make
 now we go to $ cd ~/catkin_ws/src and create the beginner_tutorials package  
 $ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 
-It creates the beginner_tutorials folder and it has a package.xml and a CmakeLists.tx in it, now open the package.xml file, if the package format is “2” then <package format="2"> and if there is a <run_depend> tag, cut <exec_depend> we need to change it because <run_depend> belongs to old version.
+It creates the beginner_tutorials folder and it has a package.xml and a CmakeLists.tx in it.  
+Now open the package.xml file and if the package format is "2" then package format = "2" if there is <run_depend> tag, we need to replace it with <exec_depend> because <run_depend> belongs to old version.
 
 #### Now we write a publisher talker node:
 $ roscd beginner_tutorials  
@@ -44,7 +45,7 @@ $ cd ../..
 $ catkin_make install  
 $ cd -
 
-![](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/1.png?raw=true)
+![](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/outputs/1.png?raw=true)
 
 
 #### Publisher:
@@ -55,7 +56,7 @@ $ cd ~/catkin_ws
 $ source ./devel/setup.bash  
 $ rosrun beginner_tutorials talker
 
-![Publisher](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/2.png?raw=true)
+![Publisher](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/outputs/2.png?raw=true)
 
 #### Subscriber:
 
@@ -64,4 +65,4 @@ $ roscore
 $ cd ~/catkin_ws  
 $ source ./devel/setup.bash  
 $ rosrun beginner_tutorials listener  
-![Subscriber](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/Outputs/3.png?raw=true)
+![Subscriber](https://github.com/alibizhan/PublisherSubscriberROSKinetic/blob/master/outputs/3.png?raw=true)
