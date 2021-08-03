@@ -9,7 +9,7 @@ $ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 
 It creates the beginner_tutorials folder and it has a package.xml and a CmakeLists.tx in it, now open the package.xml file, if the package format is “2” then <package format="2"> and if there is a <run_depend> tag, cut <exec_depend> we need to change it because <run_depend> belongs to old version.
 
-#### Now to write a publisher talker node:
+#### Now we write a publisher talker node:
 $ roscd beginner_tutorials  
 $ mkdir -p src
 
